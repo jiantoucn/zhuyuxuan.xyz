@@ -1,0 +1,94 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="uyan_auth" content="56dcd710a4" />
+<!---识别手机或电脑的js开始--->
+<script language="javascript"> 
+(function(){
+var res = GetRequest();
+var par = res['index'];
+if(par!='gfan'){
+var ua=navigator.userAgent.toLowerCase();
+var contains=function (a, b){
+if(a.indexOf(b)!=-1){return true;}
+};
+//将下面的http://m.google.com改成你的wap手机版地址 如我的 http://m.yijile.com	
+var toMobileVertion = function(){
+window.location.href = 'http://www.zhuyuxuan.xyz/m.html'
+}
+ 
+if(contains(ua,"ipad")||(contains(ua,"rv:1.2.3.4"))||(contains(ua,"0.0.0.0"))||(contains(ua,"8.0.552.237"))){return false}
+if((contains(ua,"android") && contains(ua,"mobile"))||(contains(ua,"android") && contains(ua,"mozilla")) ||(contains(ua,"android") && contains(ua,"opera"))
+||contains(ua,"ucweb7")||contains(ua,"iphone")){toMobileVertion();}
+}
+})();
+function GetRequest() {
+  var url = location.search; //获取url中"?"符后的字串
+  var theRequest = new Object();
+  if (url.indexOf("?") != -1) {
+     var str = url.substr(1);
+     strs = str.split("&");
+     for(var i = 0; i < strs.length; i ++) {
+        theRequest[strs[i].split("=")[0]]=unescape(strs[i].split("=")[1]);
+     }
+  }
+  return theRequest;
+}
+</script>
+<!---识别手机或电脑的js结束--->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>index</title>
+<style type="text/css">
+#apDiv1 {
+	position: absolute;
+	width: 512px;
+	height: 280px;
+	z-index: 1;
+	left: 725px;
+	top: 260px;
+}
+</style>
+</head>
+
+<body background="background.jpg">
+<p>
+</p>
+<p align="center">&nbsp;</p>
+<p align="center"><strong><tt>此站谨献给我爱的 朱雨萱</tt></strong></p>
+<p align="center"><tt><strong>By：很爱很爱她的 陈虓</strong></tt></p>
+<p align="center"><tt><strong>新年快乐</strong></tt></p>
+<center>
+  <!-- start http://count.knowsky.com -->
+  <script src="http://count.knowsky.com/count1/count.asp?id=82026&sx=1&ys=6" language="JavaScript" charset="gb2312"></script>
+<!-- Powered by http://www.knowsky.com -->
+</center>
+<p align="center">接下来，这里是一段导航。</p>
+<p align="center">百度</p>
+<p align="center">BiliBili</p>
+<p align="center">斗鱼TV</p>
+<p align="center">熊猫TV</p>
+<p align="center">JamLee      </p>
+<p align="center">RocketBoy</p>
+<p align="center">LaoX</p>
+<p align="center">White</p>
+<p align="center">宫本二狗子</p>
+<p align="center">老年秋</p>
+<p align="center">My Live</p>
+<p align="center">My BiliBili Homepage</p>
+<p align="center">μ's时光蛋</p>
+<div align="center">
+  <p>联系我  </p>
+  <p><a href="index.html">返回主页</a></p>
+</div>
+<p align="center"></p>
+
+
+
+<div style="text-align: center;">
+<p align="center">
+  <script type="text/javascript" src="http://ip.chinaz.com/getip.aspx"></script></p>
+<p align="right">给来访者的信</p>
+<p align="right">历次更新时间查询</p>
+<p align="right">主页Alpha测试版入口</p>
+</body>
+</html>
